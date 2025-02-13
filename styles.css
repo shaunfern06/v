@@ -1,67 +1,143 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f9e3e3;
-    font-family: 'Arial', sans-serif;
-    flex-direction: column;
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9e3e3;
+  font-family: 'Arial', sans-serif;
+  flex-direction: column;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 h1 {
-    font-size: 2em;
-    color: #d32f2f;
+  font-size: 2em;
+  color: #d32f2f;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #d32f2f;
 }
 
 .buttons {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .yes-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-    margin-right: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .no-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .gif_container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
-/* New styles for scattered images */
 .scattered-image {
-    position: absolute;
-    max-width: 50px;
-    height: auto;
-    opacity: 0.7;
+  position: absolute;
+  max-width: 50px;
+  height: auto;
+  opacity: 0.7;
 }
 
 .left-tilt {
-    transform: rotate(-15deg);
+  transform: rotate(-15deg);
 }
 
 .right-tilt {
-    transform: rotate(15deg);
+  transform: rotate(15deg);
+} */
+
+/* Existing styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9e3e3;
+  font-family: 'Arial', sans-serif;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.75em;
+  color: #d32f2f;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.yes-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.no-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styling the main image */
+.gif_container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Animation to tilt the main image left and right */
+.main-image {
+  animation: tiltLeftRight 1s ease-in-out infinite;
+}
+
+/* Keyframes for tilting the image */
+@keyframes tiltLeftRight {
+  0% {
+    transform: rotate(0deg); /* No tilt at the start */
+  }
+  50% {
+    transform: rotate(15deg); /* Tilt to the right */
+  }
+  100% {
+    transform: rotate(0deg); /* Return to the center */
+  }
 }
