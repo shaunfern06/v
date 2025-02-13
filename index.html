@@ -1,3 +1,7 @@
+To undo the scattered image part, we can revert the changes made in the last few commits. Specifically, we need to remove the `<img>` tags with the classes `scattered-image`, `left-tilt`, and `right-tilt`.
+
+### Updated index.html
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +22,9 @@
             <img src="s.png" alt="Valentine Image">
         </div>
     </div>
-    <img src="s.png" class="scattered-image left-tilt" alt="Valentine Image">
-    <img src="s.png" class="scattered-image right-tilt" alt="Valentine Image">
-    <img src="s.png" class="scattered-image left-tilt" alt="Valentine Image">
-    <img src="s.png" class="scattered-image right-tilt" alt="Valentine Image">
-    <img src="s.png" class="scattered-image left-tilt" alt="Valentine Image">
     <script src="script.js"></script>
 </body>
 </html>
+```
+
+You can now commit and push these changes to the repository.
